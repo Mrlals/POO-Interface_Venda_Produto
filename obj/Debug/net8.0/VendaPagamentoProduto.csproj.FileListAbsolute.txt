@@ -1,0 +1,14 @@
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\bin\Debug\net8.0\VendaPagamentoProduto.exe
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\bin\Debug\net8.0\VendaPagamentoProduto.deps.json
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\bin\Debug\net8.0\VendaPagamentoProduto.runtimeconfig.json
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\bin\Debug\net8.0\VendaPagamentoProduto.dll
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\bin\Debug\net8.0\VendaPagamentoProduto.pdb
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.AssemblyInfoInputs.cache
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.AssemblyInfo.cs
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.csproj.CoreCompileInputs.cache
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.dll
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\refint\VendaPagamentoProduto.dll
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.pdb
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.genruntimeconfig.cache
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\ref\VendaPagamentoProduto.dll
