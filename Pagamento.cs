@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace VendaPagamentoProduto
 {
-    public abstract class Pagamento : IPagamento
+    public abstract class Pagamento
     {
-        public DateTime Data { get; set; }
-        public double Total { get; set; }
+        public DateTime Data { get; private set; }
+        public double Total { get; private set; }
 
         protected Pagamento(double total)
         {

@@ -7,8 +7,8 @@ namespace VendaPagamentoProduto
 {
     public class Especie : Pagamento
     {
-        public double Quantia { get; set; }
-        public double Troco { get; set; }
+        public double Quantia { get; private set; }
+        public double Troco { get; private set; }
 
         public Especie(double total, double quantia) : base(total)
         {

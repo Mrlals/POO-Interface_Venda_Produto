@@ -12,3 +12,4 @@ C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0
 C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.pdb
 C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.genruntimeconfig.cache
 C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\ref\VendaPagamentoProduto.dll
+C:\Users\Mrlals\Downloads\FATEC\POO Noite\VendaPagamentoProduto\obj\Debug\net8.0\VendaPagamentoProduto.sourcelink.json

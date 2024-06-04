@@ -7,10 +7,10 @@ namespace VendaPagamentoProduto
 {
     public class Produto
     {
-        public long Codigo { get; set; }
-        public string? Nome { get; set; }
-        public double Preco { get; set; }
-        public int Estoque { get; set; }
+        public long Codigo { get; private set; }
+        public string? Nome { get; private set; }
+        public double Preco { get; private set; }
+        public int Estoque { get; private set; }
 
         public Produto(long codigo, string nome, double preco, int estoque)
         {
@@ -18,6 +18,15 @@ namespace VendaPagamentoProduto
             Nome = nome;
             Preco = preco;
             Estoque = estoque;
+        }
+
+        public void AtualizarEstoque(int quantidade)
+        {
+            if (quantidade > Estoque)
+            {
+                Console.WriteLine("Quantidade não disponível em Estoque !!");
+            }
+            Estoque -= quantidade;
         }
     }
 

@@ -4,7 +4,7 @@ using System.Net.Http.Headers;
 using VendaPagamentoProduto;
 
 List<Produto> produtos = new List<Produto>();
-IVenda venda = new Venda();
+Venda venda = new Venda();
 
 Console.WriteLine("CADASTRO DE PRODUTROS");
 Console.WriteLine("Digite a quantidade de produtos que deseja cadastrar: ");
@@ -46,14 +46,10 @@ while (codigoProduto != 0)
         continue;
     }
 
-    Console.WriteLine("Quantidade: ");
+    Console.WriteLine($"Digite a Quantidade de {produtoSelecionado.Nome}: ");
     int quantidade = Convert.ToInt32(Console.ReadLine());
-    if (quantidade > produtoSelecionado.Estoque)
-    {
-        Console.WriteLine("Quantidade não disponível!!");
-        continue;
-    }
-    produtoSelecionado.Estoque -= quantidade;
+    
+    produtoSelecionado.AtualizarEstoque(quantidade);
     ItemVenda itemVenda = new ItemVenda(quantidade, produtoSelecionado.Preco, produtoSelecionado);
     venda.AdicionarItem(itemVenda);
     contador ++;
@@ -78,7 +74,7 @@ Console.WriteLine("2 - Cheque");
 Console.WriteLine("3 - Cartão");
 
 int opcao = Convert.ToInt32(Console.ReadLine());
-IPagamento pagamento = null;
+Pagamento pagamento = null;
 
 switch (opcao)
 {
@@ -99,27 +95,29 @@ switch (opcao)
         Console.WriteLine("Dados da Transação(Insira uma informação(texto) relacionada ao cartão): ");
         string? dadosTransacao = Console.ReadLine();
         Console.WriteLine("resultado da Transação: ");
-        Cartao cartaoPagamento = new Cartao(venda.TotalComDesconto(), dadosTransacao, 0);
-        pagamento = cartaoPagamento;
+        pagamento = new Cartao(venda.TotalComDesconto(), dadosTransacao);
         break;
     default:
         Console.WriteLine("Opção inválida !!");
         break;
 }
 
-pagamento.ProcessarPagamento();
-if (pagamento is Cartao cartao)
+if (pagamento != null)
 {
-    if (cartao.ResultadoTransacao  == 1)
+    pagamento.ProcessarPagamento();
+    if (pagamento is Cartao cartao)
+    {
+        if (cartao.ResultadoTransacao  == 1)
+        {
+            Console.WriteLine("Pagamento realizado com sucesso.");
+        }
+        else
+        {
+            Console.WriteLine("Pagamento não aprovado.");
+        }
+        }
+    else
     {
         Console.WriteLine("Pagamento realizado com sucesso.");
     }
-    else
-    {
-        Console.WriteLine("Pagamento não aprovado.");
-    }
-    }
-else
-{
-    Console.WriteLine("Pagamento realizado com sucesso.");
 }

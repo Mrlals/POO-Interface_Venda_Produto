@@ -7,9 +7,9 @@ namespace VendaPagamentoProduto
 {
     public class ItemVenda
     {
-        public Produto Produto { get; set; }
-        public int Quantidade {get; set;}
-        public double Preco {get; set;}
+        public Produto Produto { get; private set; } // Associação entre classes - Composição
+        public int Quantidade {get; private set;}
+        public double Preco {get; private set;}
         public double Subtotal => Quantidade * Preco;
         public ItemVenda(int quantidade, double preco, Produto produto)
         {

@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace VendaPagamentoProduto
 {
-    public class Venda : IVenda
+    public class Venda
     {
-        public DateTime Data { get; set; }
-        public double Total { get; set; }
-        public List<ItemVenda> ItensVenda { get; set; }
+        public DateTime Data { get; private set; }
+        public double Total { get; private set; }
+        public List<ItemVenda> ItensVenda { get; private set; } // associação entre classes - Composição
 
         public Venda()
         {

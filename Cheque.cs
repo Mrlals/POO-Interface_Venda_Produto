@@ -7,9 +7,9 @@ namespace VendaPagamentoProduto
 {
     public class Cheque : Pagamento
     {
-        public long Numero { get; set; }
-        public DateTime DataDeposito { get; set; }
-        public int Situacao { get; set;}
+        public long Numero { get; private set; }
+        public DateTime DataDeposito { get; private set; }
+        public int Situacao { get; private set;}
 
         public Cheque(double total, long numero, DateTime dataDeposito, int situacao) : base(total)
         {

@@ -8,31 +8,26 @@ namespace VendaPagamentoProduto
 {
     public class Cartao : Pagamento
     {
-        public string? DadosTransacao { get; set; }
+        public string? DadosTransacao { get; private set; }
         public int ResultadoTransacao { get; private set; }
 
-
-
-        public Cartao(double total, string dadosTransacao, int resultadoTransacao) : base(total)
+        public Cartao(double total, string dadosTransacao) : base(total)
         {
             DadosTransacao = dadosTransacao;
-            ResultadoTransacao = resultadoTransacao;
         }
 
         public override void ProcessarPagamento()
         {
             Random random = new Random();
-            int numeroAleatorio = random.Next(0, 2);
+            ResultadoTransacao = random.Next(0, 2);
             
-            if (numeroAleatorio ==1)
+            if (ResultadoTransacao == 1)
             {
                 Console.WriteLine($"Pagamento com cartão efetuado. Dados da Transação: {DadosTransacao}, Resultado: {ResultadoTransacao}");
-                ResultadoTransacao = 1;
             }
             else
             {
                 Console.WriteLine($"Pagamento com cartão efetuado. Dados da Transação: {DadosTransacao}, Resultado: {ResultadoTransacao}");
-                ResultadoTransacao = 0;
             }
             
         }
